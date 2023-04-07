@@ -30,7 +30,7 @@ class BootReceiver: BroadcastReceiver() {
                 PendingIntent.FLAG_IMMUTABLE
             )
 
-            val intervalMillis = 15 * 60 * 1000 // 15 minutes in milliseconds
+            val intervalMillis = 1 * 60 * 1000 // 15 minutes in milliseconds
             val triggerAtMillis = System.currentTimeMillis() + intervalMillis
             alarmManager.setRepeating(
                 AlarmManager.RTC_WAKEUP,

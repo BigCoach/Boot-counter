@@ -11,6 +11,7 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".presentation.BootApp"
         android:supportsRtl="true"
         android:theme="@style/Theme.BootCounter"
         tools:targetApi="33">
@@ -30,6 +31,8 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
+
+        <receiver android:name=".presentation.NotificationReceiver" />
 
     </application>
 
